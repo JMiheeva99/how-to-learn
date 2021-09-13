@@ -10,7 +10,7 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-.header {/*был*/
+.header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
@@ -36,7 +36,6 @@
   order:1; 
 }
 .header__title {
-  display: flex;
   position: relative;
   left: 64px;
   width: 730px;
@@ -72,18 +71,6 @@
   position: absolute;
   top: 64px;
 }
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {/*был*/
-  height: 568px;
-  width: 568px;
-}
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {/*был*/
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
 
 
 /*DISCRIPTION*/
@@ -96,7 +83,6 @@
   display: flex;
   width: 80%;
   margin-top: 0;
-  flex-direction: row;
   justify-content: space-between;
   bottom: 0;
   flex-direction: row;
@@ -198,7 +184,7 @@
 .feynman{
   position: relative;
   margin-bottom:50px;
-  padding-top:80px; 
+  padding-top:80px;
   background-color: #F2F2F2;
   height:790px;
   background-image: url(../images/feynman.png);
@@ -254,6 +240,8 @@
   font-size: 18px;
   margin-top: 80px;
   line-height: 1.2;
+  color: white;
+  margin-right: 0;
 }
 .triangle{
   position: absolute;
@@ -297,9 +285,6 @@
 .footer__column_content-copyright{
   flex-basis: 711px;
   flex-shrink: 1;
-}
-.logo{
-
 }
 .logo_place_footer{
   position: absolute;
