@@ -315,12 +315,12 @@
   margin-bottom: 16px;
   list-style-type: none;  
 }
-/*.footer__column-link {
+.footer__column-link {
   line-height: 30px;
   font-size: 18px;
   margin-bottom: 16px;
   list-style-type: none;
-}*/
+}
 .footer__column_content-info {
   flex-shrink: 1.5;
   margin-left: auto;
