@@ -266,10 +266,6 @@
   right: -210px;
 }
 
-.table_theme_dark {
-   color: white;
-}
-
 
 /*FOOTER*/
 
@@ -321,7 +317,7 @@
   line-height: 30px;
   font-size: 18px;
   margin-bottom: 16px;
-  list-style: none;  
+  list-style: none;
   color: white;
   text-decoration: none;
   padding: 0;
