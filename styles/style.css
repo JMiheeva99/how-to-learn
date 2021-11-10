@@ -70,6 +70,12 @@
   position: absolute;
   top: 64px;
 }
+
+.table__cell {
+  width:250px;
+  min-height:5px;
+  margin-top: 60px;
+}
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
@@ -173,11 +179,7 @@
 .digits__table {
   margin-top: 0;
 }
-.table__cell {
-  width:250px;
-  min-height:5px;
-  margin-top: 60px;
-}
+
 .table__heading {
   margin-bottom:20px;
   margin-top:0;
@@ -247,6 +249,8 @@
   overflow: hidden;
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
+
+
 .table_theme_dark {
   color: white;
   z-index: 1;
@@ -262,6 +266,9 @@
   right: -210px;
 }
 
+.table_theme_dark {
+   color: white;
+}
 
 
 /*FOOTER*/
@@ -271,7 +278,7 @@
   color: white;
   padding-bottom: 40px;
   padding-top: 60px;
-  min-height: 350px;
+  min-height: 300px;
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 .footer__columns {
@@ -279,7 +286,7 @@
   display: flex;
   flex-direction: row;
   width: 90%;
-  min-height: 350px;
+  min-height: inherit;
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
@@ -287,13 +294,12 @@
 .footer__column {
   margin-top: 0;
   margin-bottom: 0;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
 }
 .footer__column_content-copyright {
-  flex-basis: 711px;
-  flex-shrink: 1;
+  flex-grow: 1;
+  justify-content: flex-end;
 }
 .logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
@@ -303,6 +309,8 @@
   height: 35px;
 }
 .footer_column-heading {
+  display: flex;
+  justify-content: space-between;
   font-weight: bold;
   margin-bottom: 30px;
   margin-top: 0;
@@ -313,33 +321,35 @@
   line-height: 30px;
   font-size: 18px;
   margin-bottom: 16px;
-  list-style-type: none;  
+  list-style: none;  
+  color: white;
+  text-decoration: none;
+  padding: 0;
+  
 }
 .footer__column-link {
   line-height: 30px;
   font-size: 18px;
   margin-bottom: 16px;
-  list-style-type: none;
+  text-decoration: none;
+  color: white;
 }
 .footer__column_content-info {
-  flex-shrink: 1.5;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
   margin-bottom: 16px;
-
+  margin-right: 150px;
 }
 .footer__column_content-social {
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 16px;
-  flex-shrink: 2;
 }
 .footer_social-icon {
   position: relative;
   background-size: contain;
   width: 16px;
   height: 16px;
+  list-style: none;
   text-decoration: none;
+  
 }
 .footer_author {
   color: white;
